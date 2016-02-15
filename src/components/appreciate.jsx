@@ -6,7 +6,7 @@ module.exports = React.createClass({
     }
   },
   render: function(){
-    return <div className="input-group">
+    return <div>
       <button
         onClick={this.handleClick}
         className="btn btn-default"

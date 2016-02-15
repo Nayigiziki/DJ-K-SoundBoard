@@ -6,7 +6,7 @@ module.exports = React.createClass({
     }
   },
   render: function(){
-    return <div className="input-group">
+    return <div>
       <button
         onClick={this.handleClick}
         className="btn btn-default"
@@ -15,7 +15,7 @@ module.exports = React.createClass({
       </button>
     </div>
   },
-  handleClick: function(){ 
+  handleClick: function(){
     var youLoyal = new Audio('../../assets/you_loyal1.ogg')
 
     youLoyal.play();
