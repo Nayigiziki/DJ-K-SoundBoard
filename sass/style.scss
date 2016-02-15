@@ -2,6 +2,16 @@
   color: black
 }
 
-audio {
-  background-color: blue
+.container {
+  max-width: 600px;
+}
+
+.all-sounds {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.clip {
+  margin: 4px;
 }

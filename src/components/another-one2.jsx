@@ -6,7 +6,7 @@ module.exports = React.createClass({
     }
   },
   render: function(){
-    return <div>
+    return <div className="clip">
       <button
         onClick={this.handleClick}
         className="btn btn-default"
@@ -19,7 +19,6 @@ module.exports = React.createClass({
     var clip = new Audio('../../assets/another-one2.ogg')
 
     clip.play();
-
   },
   handleInputChange: function(event){
     this.setState({text: event.target.value});

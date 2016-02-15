@@ -9,6 +9,7 @@ var AnotherOne2 = require('./another-one2.jsx');
 var AnotherOne3 = require('./another-one3.jsx');
 var DontEverPlayYourself1 = require('./dont-ever-play-yourself1.jsx');
 var DontEverPlayYourself2 = require('./dont-ever-play-yourself2.jsx');
+var Lion = require('./lion.jsx');
 
 module.exports = React.createClass({
   getInitialState: function(){
@@ -16,7 +17,7 @@ module.exports = React.createClass({
     }
   },
   render: function(){
-    return <div className="input-group">
+    return <div className="all-sounds">
       <YouSmart />
       <YouLoyal />
       <YouGrateful />
@@ -27,6 +28,7 @@ module.exports = React.createClass({
       <AnotherOne3 />
       <DontEverPlayYourself1 />
       <DontEverPlayYourself2 />
+      <Lion />
     </div>
   }
 })

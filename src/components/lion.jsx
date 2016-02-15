@@ -6,7 +6,7 @@ module.exports = React.createClass({
     }
   },
   render: function(){
-    return <div>
+    return <div className="clip">
       <button
         onClick={this.handleClick}
         className="btn btn-default"

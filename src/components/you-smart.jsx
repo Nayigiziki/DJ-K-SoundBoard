@@ -6,7 +6,7 @@ module.exports = React.createClass({
     }
   },
   render: function(){
-    return <div>
+    return <div className="clip">
       <button
         onClick={this.handleClick}
         className="btn btn-default"
@@ -16,17 +16,9 @@ module.exports = React.createClass({
     </div>
   },
   handleClick: function(){
-    var youSmart = new Audio('../../assets/you_smart1.ogg')
+    var clip = new Audio('../../assets/you_smart1.ogg')
 
-    youSmart.play();
-    // Send value of text input to Firebase
-    console.log(this);
-    // this.props.itemsStore.push({
-    //   text: this.state.text,
-    //   done: false
-    // });
-    //
-    // this.setState({text: ''});
+    clip.play();
   },
   handleInputChange: function(event){
     this.setState({text: event.target.value});
